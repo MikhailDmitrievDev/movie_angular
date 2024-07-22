@@ -1,8 +1,21 @@
+$header_links_font: 14px;
+
 .header_main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
-    padding: 10px 20px;
+    padding-top: 50px;
+    position: relative;
+
     
 }
 
@@ -10,7 +23,7 @@
     a.logo {
         display: block;
         img {
-            width: 120px;
+            width: 170px;
             height: auto;
         }
     }
@@ -21,8 +34,18 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    font-family: acrom-example;
     li {
         margin-left: 20px;
+    }
+    a {
+        font-size: $header_links_font;
+    }
+    a:hover {
+        background: 0 0;
+        border-bottom: 3px solid #652bfb;
+        -webkit-box-shadow: 0 10px 30px rgba(101, 43, 251, .6);
+        box-shadow: 0 10px 30px rgba(101, 43, 251, .6)
     }
     margin: 0;
     padding: 0;
@@ -41,3 +64,79 @@
     align-items: center
 }
 
+.btn-login a {
+    background: #652bfb;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-border-radius: 10em;
+    border-radius: 10em;
+    color: #fff;
+    width: 200px;
+    height: 45px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 3px solid transparent;
+    -webkit-transition: background .5s ease, border .5s ease, -webkit-box-shadow .5s ease;
+    transition: background .5s ease, border .5s ease, -webkit-box-shadow .5s ease;
+    -o-transition: background .5s ease, border .5s ease, box-shadow .5s ease;
+    transition: background .5s ease, border .5s ease, box-shadow .5s ease;
+    transition: background .5s ease, border .5s ease, box-shadow .5s ease, -webkit-box-shadow .5s ease
+}
+
+.burger-menu {
+    display: none; /* hide the burger menu by default */
+    cursor: pointer;
+    position: relative;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+
+.navigation-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    z-index: 999;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links {
+    margin-bottom: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .navigation-menu {
+        display: block;
+    }
+}

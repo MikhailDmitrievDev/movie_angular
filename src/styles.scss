@@ -1,5 +1,68 @@
+@font-face {
+    font-family: roboto-example;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../public/assets/fonts/RobotoRegular/RobotoRegular.eot);
+    src: url(../public/assets/fonts/RobotoRegular/RobotoRegular.eot%3F) format("embedded-opentype"), url(../public/assets/fonts/RobotoRegular/RobotoRegular.woff) format("woff"), url(../public/assets/fonts/RobotoRegular/RobotoRegular.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: roboto-example;
+    font-weight: 700;
+    font-style: normal;
+    src: url(../public/assets/fonts/RobotoBold/RobotoBold.eot);
+    src: url(../public/assets/fonts/RobotoBold/RobotoBold.eot%3F) format("embedded-opentype"), url(../public/assets/fonts/RobotoBold/RobotoBold.woff) format("woff"), url(../public/assets/fonts/RobotoBold/RobotoBold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: acrom-example;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../public/assets/fonts/Acrom-Regular/Acrom-Regular.eot);
+    src: url(../public/assets/fonts/Acrom-Regular/Acrom-Regular.eot%3F) format("embedded-opentype"), url(../public/assets/fonts/Acrom-Regular/Acrom-Regular.woff) format("woff"), url(../public/assets/fonts/Acrom-Regular/Acrom-Regular.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: acrom-example;
+    font-weight: 700;
+    font-style: normal;
+    src: url(../public/assets/fonts/Acrom-Bold/Acrom-Bold.eot);
+    src: url(../public/assets/fonts/Acrom-Bold/Acrom-Bold.eot%3F) format("embedded-opentype"), url(../public/assets/fonts/Acrom-Bold/Acrom-Bold.woff) format("woff"), url(../public/assets/fonts/Acrom-Bold/Acrom-Bold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: acrom-example;
+    font-weight: 800;
+    font-style: normal;
+    src: url(../public/assets/fonts/Acrom-ExtraBold/Acrom-ExtraBold.eot);
+    src: url(../public/assets/fonts/Acrom-ExtraBold/Acrom-ExtraBold.eot%3F) format("embedded-opentype"), url(../public/assets/fonts/Acrom-ExtraBold/Acrom-ExtraBold.woff) format("woff"), url(../public/assets/fonts/Acrom-ExtraBold/Acrom-ExtraBold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: acrom-example;
+    font-weight: 300;
+    font-style: normal;
+    src: url(../public/assets/fonts/Acrom-Light/Acrom-Light.eot);
+    src: url(../public/assets/fonts/Acrom-Light/Acrom-Light.eot%3F) format("embedded-opentype"), url(../public/assets/fonts/Acrom-Light/Acrom-Light.woff) format("woff"), url(../public/assets/fonts/Acrom-Light/Acrom-Light.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: acrom-example;
+    font-weight: 500;
+    font-style: normal;
+    src: url(../public/assets/fonts/Acrom-Medium/Acrom-Medium.eot);
+    src: url(../public/assets/fonts/Acrom-Medium/Acrom-Medium.eot%3F) format("embedded-opentype"), url(../public/assets/fonts/Acrom-Medium/Acrom-Medium.woff) format("woff"), url(../public/assets/fonts/Acrom-Medium/Acrom-Medium.ttf) format("truetype")
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+    
 }
