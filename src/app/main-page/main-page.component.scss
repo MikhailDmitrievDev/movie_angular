@@ -14,17 +14,24 @@
 
 .main_buttons {
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 20px;
 }
 
+.tags{
+  display: flex;
+  align-items: center;
+}
 .tag {
   background-color: #ffbc1c;
   border-radius: 15px;
-  width: 45px;
+  width: 65px;
   padding: 5px 10px 5px 10px;
   text-align: center;
+}
+
+.green{
+  background-color: #00ff00;
+  margin-left: 10px;
 }
 
 .title {
@@ -34,7 +41,9 @@
 
 .description {
   color: #fff;
-  font-size: 15px;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .main_btn {
@@ -43,6 +52,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 5px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -67,6 +77,25 @@
   transition: background 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
   transition: background 0.5s ease, border 0.5s ease, box-shadow 0.5s ease,
     -webkit-box-shadow 0.5s ease;
+}
+
+.main_btn:hover {
+  background: #f2c744;
+  border: 3px solid #f2c744;
+  box-shadow: 0 0 10px #f2c744;
+}
+
+.main_btn:hover::after {
+  opacity: 0.5;
+}
+
+.main_container {
+padding-left: 65vh;
+
+}
+
+.server_list{
+  margin-top: 5vh;
 }
 
 .server_item {
