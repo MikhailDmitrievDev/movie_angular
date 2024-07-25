@@ -1,8 +1,8 @@
 <div class="header_main">
     <div class="logo_block">
-        <a class="logo"href="index.html"><img src="{{url_logo}}" alt="Movie RolePlay"></a>
+        <a class="logo" href="index.html"><img src="{{url_logo}}" alt="Movie RolePlay"></a>
     </div>
-    
+
     <div class="toggle">
         <a class="menu-triger" href="index.html#"></a>
     </div>
@@ -11,18 +11,36 @@
         <!-- <a class="menu-close" href="index.html#"></a> -->
         <ul class="nav">
             <li class="nav-links active-nav-link"><a href="index.html">Главная</a></li>
-            <li class="nav-links"><a href="news.html">Новости</a></li>
-            <li class="nav-links"><a href="connect.html">Как начать играть</a></li>
-            <li class="store-link"><a href="store.html">Магазин <img src="img/basket-icon.svg" alt=""></a></li>
-            <li class="nav-links"><a href="dashboard.html">Мониторинг</a></li>
-            <li class="nav-links"><a href="reseller.html">Купить GTA V</a></li>
-            <li class="nav-links"><a href="https://forum.gtavrp.ru">Форум</a></li>
+            <li class="nav-links"><a href="/news" routerLinkActive="active" ariaCurrentWhenActive="page">Новости</a>
+            </li>
+            <li class="nav-links"><a href="/how-to-play">Как начать играть</a></li>
+            <li class="store-link"><a href="/store" routerLinkActive="active" ariaCurrentWhenActive="page">Магазин <img
+                        src="img/basket-icon.svg" alt=""></a></li>
+            <li class="nav-links"><a href="/dashboard" routerLinkActive="active"
+                    ariaCurrentWhenActive="page">Мониторинг</a></li>
+            <li class="nav-links"><a [href]="forum_url">Форум</a></li>
         </ul>
     </div>
 
     <div class="btn-login">
-        <a class="auth submit-info first-popup-link flex-box" rel="leanModal" href="index.html#">Войдите в аккаунт</a>
-        
+        <a class="auth submit-info first-popup-link flex-box" rel="leanModal" href="/">Войдите в аккаунт</a>
+
+    </div>
+
+    <div class="burger-menu" (click)="toggleNavigation()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="navigation-menu" [ngClass]="{'active': isNavigationActive}">
+            <ul class="nav">
+                <li class="nav-links active-nav-link"><a href="index.html">Главная</a></li>
+                <li class="nav-links"><a href="/news" routerLinkActive="active" ariaCurrentWhenActive="page">Новости</a></li>
+                <li class="nav-links"><a href="/how-to-play">Как начать играть</a></li>
+                <li class="store-link"><a href="/store" routerLinkActive="active" ariaCurrentWhenActive="page">Магазин <img src="img/basket-icon.svg" alt=""></a></li>
+                <li class="nav-links"><a href="/dashboard" routerLinkActive="active" ariaCurrentWhenActive="page">Мониторинг</a></li>
+                <li class="nav-links"><a [href]="forum_url">Форум</a></li>
+            </ul>
+        </div>
     </div>
 
 </div>
